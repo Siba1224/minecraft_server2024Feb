@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+<meta charset="UTF-8">
+<title>testtest</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".move").click(function(){
+        $("div").animate({left:'250px'},"slow")
+    });
+});
+$(document).ready(function(){
+    $(".back").click(function(){
+        $("div").animate({left:'0px'},"slow")
+    });
+});
+</script>
+</head>
+<body>
+    <input type="button" class="move" value="右に～"/>
+    <input type="button" class="back" value="左に～"/>
+    <div style="background:#7ff; position=absolute; height:150; width:100; text-align:center">あああああ</div>
+</body>
+</html>
