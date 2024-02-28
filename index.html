@@ -11,16 +11,31 @@
       top: 0px;
       bottom:0px;
     }
+    #aaa{
+      background-color:#f44;
+      text-align:center;
+      height:75;
+      font-size:50;
+    }
   </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-</head>
-<body>
-  <div style="background-color:#0ff;text-align:center;height:75;width:150;font-size:50;" class="animate__animated animate__fadeInUp">aaa</div>
   <script type="text/javascript">
     var log = function(){
-    document.write('<div style="background-color:#f44;text-align:center;height:75;width:150;font-size:50;" class="animate__animated animate__fadeOutDown">aaa</div>');
+      document.getElementById("aaa").className="animate__animated animate__zoomOut";
+        var log = function(){
+          document.getElementById("aaa").innerHTML="新たな世界になって復活！！";
+          document.getElementById("aaa").className="animate__animated animate__zoomInDown";
+            var log = function(){
+              document.getElementById("aaa").className="animate__animated animate__zoomOut";
+          };
+          setTimeout(log, 3000);
+      };
+      setTimeout(log, 3000);
   };
   setTimeout(log, 3000);
   </script>
+</head>
+<body>
+  <div id="aaa" class="animate__animated animate__zoomInDown">あのMinecraft鯖が･･･</div>
 </body>
 </html>
