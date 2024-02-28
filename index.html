@@ -11,31 +11,58 @@
       top: 0px;
       bottom:0px;
     }
+    .oya{
+      width: 100%;
+      height: 100%;
+      outline: dashed 1px black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     #aaa{
       background-color:#f44;
       text-align:center;
-      height:75;
-      font-size:50;
+      font-size:300%;
+      padding:1cm;
     }
   </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script type="text/javascript">
+   startFunction = function(){
+      elems = document.getElementsByTagName("body");
+      for (var item of elems) {
+        item.classList.add("scroll-lock");
+      }
+  }
     var log = function(){
       document.getElementById("aaa").className="animate__animated animate__zoomOut";
         var log = function(){
           document.getElementById("aaa").innerHTML="新たな世界になって復活！！";
-          document.getElementById("aaa").className="animate__animated animate__zoomInDown";
+          document.getElementById("aaa").className="animate__animated animate__zoomIn";
             var log = function(){
               document.getElementById("aaa").className="animate__animated animate__zoomOut";
+                var log = function(){
+                  document.getElementById("aaa").style.fontSize="450%"
+                  document.getElementById("aaa").innerHTML='<img src="https://cultofthepartyparrot.com/parrots/hd/parrot.gif" height="10%">第2回 さいきち鯖稼働 ！！<img src="https://cultofthepartyparrot.com/parrots/hd/reverseparrot.gif" height="10%">'
+                  document.getElementById("aaa").className="animate__animated animate__zoomInDown"
+                };
+                setTimeout(log,1000);
+                elems = document.getElementsByTagName("body");
+                for (var item of elems) {
+                item.classList.remove("scroll-lock");
+                }
           };
-          setTimeout(log, 3000);
+          setTimeout(log, 4000);
       };
-      setTimeout(log, 3000);
+      setTimeout(log, 1000);
   };
-  setTimeout(log, 3000);
+  setTimeout(log, 4000);
   </script>
 </head>
-<body>
-  <div id="aaa" class="animate__animated animate__zoomInDown">あのMinecraft鯖が･･･</div>
+<body onload="startFunction()">
+  <div class="oya">
+  <div id="aaa" class="animate__animated animate__zoomIn">あのMinecraft MOD鯖が･･･</div>
+  </div><br>
+  <h1>わーい</h1>
 </body>
 </html>
