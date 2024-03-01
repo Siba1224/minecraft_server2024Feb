@@ -33,17 +33,40 @@
   80% { background-color: #9b59b6; }
   100% { background-color: #e74c3c; }
   }
+
+    
     #mokujiA{
+      float:left;
       outline:solid 3px white;
       color:white;
       font-size:150%;
       text-align:center;
-      margin-left:5%;
-      margin-right:50%;
+      margin-left:10;
+      margin-right:10;
+      padding:15;
+      width:200
     }
     #mokujiB{
       outline:solid 1px;
-      margin:5%;
+      text-align:left;
+      font-size:90%
+    }
+    #osirase{
+      outline:solid 3px white;
+      color:white;
+      font-size:150%;
+      text-align:center;
+      margin-left:250;
+      margin-right:10;
+      padding:10;
+    }
+    #textarea{
+      background-color:black;
+      color:white;
+      font-size:30;
+      height:30%;
+      width:100%;
+      resize:none;
     }
   </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -89,13 +112,18 @@
   </div>
   <hr>
   <h1 style="color:white">やったね^^</h1>
-  <div id="mokujiA">目次
-    <div id="mokujiB">
-      A<br>
-      B<br>
-      C<br>
-      D
-    </div><br>
+  <div>
+    <div id="mokujiA">目次
+      <div id="mokujiB">
+        ・さいきち鯖とは<br>
+        ・今回の世界<br>
+        ・禁止事項<br>
+        ・modの導入方法
+      </div>
+    </div>
+    <div id="osirase">おしらせ<br>
+        <textarea id="textarea">aaa</textarea>
+    </div>
   </div>
   </body>
 </html>
