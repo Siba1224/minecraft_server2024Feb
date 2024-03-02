@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>不健康鯖Ver.2</title>
   <style>
     body.scroll-lock {
@@ -40,10 +41,6 @@
       color:white;
       font-size:150%;
       text-align:center;
-      margin-left:20;
-      margin-right:10;
-      margin-bottom:20;
-      padding:15;
       width:200
     }
     #mokujiB{
@@ -51,13 +48,19 @@
       text-align:left;
       font-size:90%
     }
-    #osirase{
+    #osiraseA{
       outline:solid 3px white;
       color:white;
       font-size:150%;
       text-align:center;
-      margin-left:20;
-      padding-right:20;
+      width:90%;
+    }
+    #osiraseB{
+      outline:solid 2px white;
+      color:white;
+      font-size:100%;
+      text-align:center;
+      width:80%;
     }
     #textarea{
       background-color:black;
@@ -100,7 +103,7 @@
                    };
                   setTimeout(log,3000);
                   document.getElementById("aaa").style.fontSize="450%"
-                  document.getElementById("aaa").innerHTML='<img src="https://cultofthepartyparrot.com/parrots/hd/parrot.gif" height="10%">第2回 不健康サーバー稼働 ！！<img src="https://cultofthepartyparrot.com/parrots/hd/reverseparrot.gif" height="10%">'
+                  document.getElementById("aaa").innerHTML='<img src="https://cultofthepartyparrot.com/parrots/hd/parrot.gif" height="10%">第2回 不健康鯖稼働 ！！<img src="https://cultofthepartyparrot.com/parrots/hd/reverseparrot.gif" height="10%">'
                   document.getElementById("aaa").className="animate__animated animate__zoomInDown"
                 };
                 setTimeout(log,500);
@@ -114,13 +117,13 @@
 </head>
 <body onload="startFunction()" style="background-color:black;">
   <div id="oya">
-  <div id="aaa" class="animate__animated animate__zoomIn">あのMinecraft MODサーバーが･･･</div>
+  <div id="aaa" class="animate__animated animate__zoomIn">あのMinecraft MOD鯖が･･･</div>
   </div>
   <hr>
   <h1 style="color:white">やったね^^</h1>
     <div id="mokujiA">無くても良い目次
       <div id="mokujiB">
-        ・<a href="#Hukenkousaba">不健康サーバーとは</a><br>
+        ・<a href="#Hukenkousaba">不健康鯖とは</a><br>
         ・<a href="#Rule">世界のルール</a><br>
         ・<a href="#BanAction">禁止事項</a><br>
         ・<a href="#ModDL">mod導入方法</a><br>
@@ -128,11 +131,11 @@
         ・<a href="#osusume">おすすめMod</a>
       </div>
     </div><br>
-    <div id="osirase">おしらせ<br>
-        <textarea id="textarea">今は特になし</textarea>
+    <div id="osiraseA">おしらせ<br>
+        <div id="osiraseB"><object data="osirase.txt" type="text/plain"></object></div>
     </div><br>
   <hr>
-  <h2 id="Hukenkousaba">◆不健康サーバーとは◆</h2>
+  <h2 id="Hukenkousaba">◆不健康鯖とは◆</h2>
   <p>　さいきち氏によるMinecraftのModサーバーのことであり、みんなでModで遊ぶために建てられた企画である。<br>
   この世界でのコミュニケーション方法は他プレイヤーとの距離が近づくと喋れるようになるMod（通称「しゃべクラ」）が導入されており、ゲーム内で対面して会話をする必要があるがアイテムのウォーキートーキー（別名:トランシーバ）を使用することで遠くにいる仲間と会話することが可能である。<br>
   そして今回の世界はリアルな銃や魔法に工業、ドラゴンなどの生物などとたくさんのバリエーション豊かなModが導入されており、遊び方が無限大！！
@@ -148,7 +151,7 @@
   <h2 id="BanAction">◆禁止事項◆</h2>
   <p>基本的にクリエイティブ飛行・座標指定のテレポート・同一のアイテムによる食料回復は禁止<br>
   <u style="color:Red">使用禁止アイテム</u><br>
-  [Mechanism]メカニズムスーツ、ホモォちゃん、ワープゲート<br>
+  [Mechanism]メカニズムスーツ、ホモォ君、ワープゲート<br>
   [Botania]グリザイヤの果実、フリューゲルのティアラ
   </p>
   <h2 id="ModDL">◆mod導入方法◆</h2>
